@@ -7,5 +7,4 @@ module.exports = {
     publicPath: '/dist',
     filename: '[name].js',
   },
-  devtool: 'source-map'
 };

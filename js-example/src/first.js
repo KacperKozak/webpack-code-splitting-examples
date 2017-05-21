@@ -1,5 +1,5 @@
 console.log('First file loaded!');
 
 export default () => {
-  console.log('Module from first file');
+  console.log('Module from src/first.js');
 }
