@@ -1,7 +1,7 @@
-import('./1.js')
-  .then((file) => {
-    console.log(file);
-  })
-  .catch((error) => {
-    console.error(error);
-  })
+const file = import('./first');
+
+console.log('Loading', file);
+
+file
+  .then(console.log)
+  .catch(console.error)
