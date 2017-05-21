@@ -1,0 +1,48 @@
+{
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+        "react"
+    ],
+    "env": {
+        "browser": true,
+        "jest": true,
+        "node": true
+    },
+    "rules": {
+        "indent": ["error", 2],
+        "no-console": "error",
+        "import/no-extraneous-dependencies": ["off"],
+        "no-underscore-dangle": ["error", {
+            "allowAfterThis": true,
+            "allowAfterSuper": true
+        }],
+        "comma-dangle": ["error", {
+            "functions": "never",
+            "arrays": "always-multiline",
+            "objects": "always-multiline",
+            "imports": "always-multiline",
+            "exports": "always-multiline",
+        }],
+        "max-len": ["error", 80],
+        "max-depth": ["error", 4],
+        "max-nested-callbacks": ["error", 4],
+        "complexity": ["warn", 4],
+        "react/no-array-index-key": ["off"],
+        "react/require-default-props": ["off"],
+        "react/prop-types": ["warn", { ignore: ["children"] }],
+        "react/forbid-prop-types": ["warn", {
+            "forbid": ["any"]
+        }],
+        "jsx-a11y/label-has-for": ["off"],
+        "no-warning-comments": ["warn", {
+            "terms": ["todo", "@todo"],
+            "location": "start"
+        }]
+    },
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    }
+}

@@ -1,0 +1,9 @@
+{
+  "presets": [["es2015", { "modules": false }], "react"],
+  "plugins": [
+    "transform-runtime",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "syntax-dynamic-import"
+  ]
+}
