@@ -4,8 +4,9 @@
   "description": "React bonestore connect HOC",
   "main": "dist/main.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "start": "webpack-dev-server --config webpack.config.js",
+    "build": "rm -rf dist && webpack",
+    "start": "webpack-dev-server",
+    "size": "webpack --json | webpack-bundle-size-analyzer",
     "test": "jest --coverage",
     "test:watch": "jest --watch --coverage",
     "lint": "eslint --ext .jsx --ext .js src"
@@ -44,14 +45,17 @@
     "style-loader": "^0.17.0",
     "url-loader": "^0.5.8",
     "webpack": "^2.5.1",
+    "webpack-bundle-size-analyzer": "^2.6.0",
     "webpack-dev-server": "^2.4.5"
   },
   "dependencies": {
     "lodash": "^4.17.4",
+    "moment": "^2.18.1",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-code-splitting": "^1.1.1",
     "react-dom": "^15.5.4",
+    "react-moment-countdown": "^0.1.0",
     "react-router-dom": "^4.1.1",
     "react-world-flags": "0.0.3"
   }

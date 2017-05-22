@@ -4,6 +4,11 @@
   background: #DDD;
   margin: 0;
 }
+:global(img) {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 
 .app {}
 
