@@ -24,7 +24,7 @@
             "imports": "always-multiline",
             "exports": "always-multiline",
         }],
-        "max-len": ["error", 80],
+        "max-len": ["error", 100],
         "max-depth": ["error", 4],
         "max-nested-callbacks": ["error", 4],
         "complexity": ["warn", 4],

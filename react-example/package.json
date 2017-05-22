@@ -57,6 +57,7 @@
     "react-dom": "^15.5.4",
     "react-moment-countdown": "^0.1.0",
     "react-router-dom": "^4.1.1",
-    "react-world-flags": "0.0.3"
+    "react-world-flags": "0.0.3",
+    "recharts": "^0.22.4"
   }
 }

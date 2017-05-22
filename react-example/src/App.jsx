@@ -8,6 +8,7 @@ import {
 import styles from './App.css';
 import Home from './pages/Home';
 import IPA from './pages/IPA';
+import Admin from './pages/Admin';
 import Logo from './components/Logo';
 
 const App = () => (
@@ -20,10 +21,12 @@ const App = () => (
         <NavLink to="/porter">Porter</NavLink>
         <NavLink to="/ipa">IPA</NavLink>
         <NavLink to="/stout">Stout</NavLink>
+        <NavLink to="/admin">(admin)</NavLink>
       </nav>
       <div className={styles.main}>
         <Route exact path="/" component={Home} />
         <Route path="/ipa" component={IPA} />
+        <Route path="/admin" component={Admin} />
       </div>
     </div>
   </Router>
