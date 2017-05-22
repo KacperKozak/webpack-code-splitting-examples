@@ -7,7 +7,7 @@ const async = (load, LoadingComponent) => (
       this.state = { BaseComponent: null };
     }
     componentDidMount() {
-      load.then((module) => {
+      load().then((module) => {
         this.setState({
           BaseComponent: module.default ? module.default : module,
         });
