@@ -17,7 +17,7 @@ const App = () => (
       <nav className={styles.nav}>
         <Logo />
         <NavLink exact to="/">Home</NavLink>
-        <NavLink to="/american-pale-ale">American Pale Ale</NavLink>
+        <NavLink to="/Ale">Ale</NavLink>
         <NavLink to="/porter">Porter</NavLink>
         <NavLink to="/ipa">IPA</NavLink>
         <NavLink to="/stout">Stout</NavLink>
