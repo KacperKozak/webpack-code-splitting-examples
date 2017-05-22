@@ -6,7 +6,6 @@ import {
 } from 'react-router-dom';
 
 import styles from './App.css';
-import Async from './Async';
 import Home from './pages/Home';
 import IPA from './pages/IPA';
 import Logo from './components/Logo';
@@ -22,12 +21,6 @@ const App = () => (
         <NavLink to="/ipa">IPA</NavLink>
         <NavLink to="/stout">Stout</NavLink>
       </nav>
-      <Async load={import('./components/Test')} example="heello example">
-        <p>Loading</p>
-      </Async>
-      <Async load={import('./components/Test2')} example="heello example 2">
-        <p>Loading2</p>
-      </Async>
       <div className={styles.main}>
         <Route exact path="/" component={Home} />
         <Route path="/ipa" component={IPA} />
