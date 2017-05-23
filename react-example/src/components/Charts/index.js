@@ -1,4 +1,2 @@
-import async from '../../async';
-
-export const BarChart = async(() => import('./BarChart'));
-export const LineChart = async(() => import('./LineChart'));
+export { default as BarChart } from './BarChart';
+export { default as LineChart } from './LineChart';

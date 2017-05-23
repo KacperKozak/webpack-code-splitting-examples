@@ -1,3 +1,1 @@
-import async from '../../async';
-
-export default async(() => import('./Flag'));
+export { default } from './Flag';
