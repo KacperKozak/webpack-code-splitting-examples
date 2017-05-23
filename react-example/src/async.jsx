@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-const async = (load, LoadingComponent) => (
+const async = load => (
   class extends Component {
     constructor(props) {
       super(props);
@@ -16,7 +16,6 @@ const async = (load, LoadingComponent) => (
     render() {
       const { BaseComponent } = this.state;
       if (BaseComponent) return <BaseComponent {...this.props} />;
-      if (LoadingComponent) return <LoadingComponent />;
       return null;
     }
   }
