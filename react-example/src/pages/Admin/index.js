@@ -1,1 +1,3 @@
-export { default } from './Admin';
+import async from '../../async';
+
+export default async(() => import('./Admin'));

@@ -1,1 +1,3 @@
-export { default } from './CountDown';
+import async from '../../async';
+
+export default async(() => import('./CountDown'));
